@@ -35,4 +35,32 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+        public void testSortingAppWithNoArguments() {
+            String[] args = new String[0];
+            SortingApp.main(args);
+            
+        }
+
+
+        public void testSortingAppWithOneArgument() {
+            String[] args = {"5"};
+            SortingApp.main(args);
+           
+        }
+
+
+        public void testSortingAppWithTenArguments() {
+            String[] args = {"9", "5", "2", "8", "1", "6", "3", "7", "4", "0"};
+            SortingApp.main(args);
+           
+        }
+
+
+        public void testSortingAppWithMoreThanTenArguments() {
+            String[] args = {"9", "5", "2", "8", "1", "6", "3", "7", "4", "0", "10"};
+            SortingApp.main(args);
+            
+        }
+    }
 }
